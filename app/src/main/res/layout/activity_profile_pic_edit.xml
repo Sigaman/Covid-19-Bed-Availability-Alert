@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePicEdit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2E2E2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@drawable/login_shape_bk">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/dash_profpic"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@mipmap/aaa"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imgup"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/drname"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Doctor Name"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/treat"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Treatment"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/therapi"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:hint="Therapist"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/agee"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Age"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/genderr"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Gender"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/experienc"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Experience"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/descrp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:hint="Description"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/therapliss"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Therapy list"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/hospi"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Hospital Name"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/phonee"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Phone Number"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/locatee"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:hint="Location"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_baseline_person_24"/>
+                        <EditText
+                            android:id="@+id/landyy"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:hint="Landmark"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/sub"
+                            android:text="Submit"
+                            android:textColor="#fff"
+                            android:background="@drawable/buttonshape_accent"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content">
+
+                        </Button>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

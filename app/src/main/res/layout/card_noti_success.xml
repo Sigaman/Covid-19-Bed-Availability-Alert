@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardBackgroundColor="#fff"
+        android:elevation="15dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/tour_det_recy"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/aaa"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    app:cardBackgroundColor="#fff"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:elevation="15dp"
+                            android:layout_alignParentBottom="true"
+                            app:cardCornerRadius="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <RelativeLayout
+                                android:gravity="center_horizontal"
+                                android:background="#00C48C"
+                                android:id="@+id/complete_a_lay_s"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_marginBottom="5dp"
+                                    android:id="@+id/trnmnt_ststus_s_cmp"
+                                    android:text="Completed"
+                                    android:layout_alignParentBottom="true"
+                                    android:textColor="#F3F3F1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:elevation="15dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/dd"
+                                android:background="#222"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp">
+                                <ImageView
+                                    android:id="@+id/trnmnt_img_url"
+                                    android:layout_width="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="100dp"
+                                    android:scaleType="centerCrop"
+                                    android:transitionName="img"
+                                    tools:ignore="UnusedAttribute" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/trnmnt_id_s_cmp"
+                                android:textColor="#fff"
+                                android:text="0"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:id="@+id/lay_grp"
+
+                android:layout_below="@id/aaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/trnmnt_name_s_cmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Extended extra Event Name"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+
+
+                <RelativeLayout
+                    android:id="@+id/d1"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/trnmnt_name_s_cmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#727272"
+                        android:textSize="12sp"
+                        android:text="Tournament Ended On"
+
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/news_titles" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:text="a day"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/news_titles"
+                        android:id="@+id/trnmnt_reg_ends_s_cmp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PrizePool"
+                        android:textColor="#727272"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/news_titles_ne"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#222"
+                        android:text="20000 SR"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/news_titles_ne"
+                        android:id="@+id/trnmnt_prize_s_cmp"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/d1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#727272"
+                        android:textSize="12sp"
+                        android:text="Gme Mode"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/gm_mode" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:text="Solo"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/gm_mode"
+                        android:id="@+id/trnmnt_gm_s_cmp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Participants"
+                        android:textColor="#727272"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/partici"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="#222"
+                        android:text="20000"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/partici"
+                        android:id="@+id/trnmnt_partici_s_cmp"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

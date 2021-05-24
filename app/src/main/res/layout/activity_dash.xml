@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dash">
+
+    <RelativeLayout
+        android:id="@+id/lay_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/lay_logos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:src="@drawable/covidlogo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/gotham"
+                android:gravity="center_horizontal"
+                android:shadowColor="#57000000"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:text="Covid-19 Bed Availability"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!--  <View
+              android:layout_centerVertical="true"
+              android:background="@color/colorAccent"
+              android:layout_gravity="center"
+              android:layout_toEndOf="@+id/lay_logos"
+              android:layout_marginRight="12dp"
+              android:layout_marginLeft="22dp"
+              android:layout_width="1dp"
+              android:layout_height="60dp"
+              android:layout_marginEnd="12dp"
+              android:layout_toRightOf="@+id/lay_logos"
+              android:layout_marginStart="22dp">
+
+          </View>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp">
+
+            <!--<View
+                android:background="@color/colorAccent"
+                android:layout_gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp">
+
+            </View>-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dash_profpic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/aaa"
+
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dash_bed_filter"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_filter_list_24"
+
+                />
+
+
+        </LinearLayout>
+        <!-- <ImageView
+             android:layout_centerVertical="true"
+             android:id="@+id/tm_bck"
+             android:layout_marginLeft="25dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/ic_baseline_arrow_back_ios_24"
+             android:layout_width="35dp"
+             android:layout_height="35dp">
+
+         </ImageView>-->
+
+        <!--<LinearLayout
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:elevation="6dp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profpic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/aaa"
+
+                />
+        </LinearLayout>-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_one"
+
+        android:layout_marginTop="8dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="222dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/gradient_bg" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tab_bg"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@null"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextColor="#ffffff"
+                    app:tabTextColor="#333" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/dash_noti_filter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_notifications_active_24"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+         <!--   <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_speaker_notes_24"
+                app:elevation="6dp">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="220dp"
+
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aaa"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

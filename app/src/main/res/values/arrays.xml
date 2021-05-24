@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="vasinated">
+        <item>Yes - Dose I</item>
+        <item>Yes - Dose II</item>
+        <item>No</item>
+
+    </string-array>
+
+
+
+<!--District-->
+    <string-array name="all_district">
+        <item> -- District -- </item>
+
+        <item>Ariyalur</item>
+        <item>Chengalpattu</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Cuddalore</item>
+        <item>Dharmapuri</item>
+        <item>Dindigul</item>
+        <item>Erode</item>
+        <item>Kallakurichi</item>
+        <item>Kancheepuram</item>
+
+        <item>Kanniyakumari</item>
+        <item>Karur</item>
+        <item>Krishnagiri</item>
+        <item>Madurai</item>
+        <item>Mayiladuthurai</item>
+        <item>Nagapattinam</item>
+        <item>Dindigul</item>
+        <item>Nilgiris</item>
+        <item>Perambalur</item>
+        <item>Pudukkottai</item>
+
+        <item>Ramanathapuram</item>
+        <item>Ranipet</item>
+        <item>Salem</item>
+        <item>Sivagangai</item>
+        <item>Tenkasi</item>
+        <item>Thanjavur</item>
+        <item>Theni</item>
+        <item>Thiruchirappalli</item>
+        <item>Thirupathur</item>
+        <item>Thiruvarur</item>
+
+        <item>Thoothukudi</item>
+        <item>Tirunelveli</item>
+        <item>Tiruppur</item>
+        <item>Tiruvallur</item>
+        <item>Tiruvannamalai</item>
+        <item>Vellore</item>
+        <item>Villupuram</item>
+        <item>Virudhunagar</item>
+
+
+
+
+
+
+    </string-array>
+
+    <string-array name="hospital_type">
+        <item> - Hospital Type - </item>
+        <item>Government</item>
+        <item>Private</item>
+
+    </string-array>
+
+    <string-array name="severity">
+        <item> - Severity - </item>
+        <item>CHO - Severe Cases</item>
+        <item>CHC - Moderate Cases</item>
+        <item>CCC - Mild Cases</item>
+
+    </string-array>
+
+    <string-array name="bed_type">
+        <item> - Bed Type - </item>
+        <item>Normal Bed</item>
+        <item>Oxygen Bed</item>
+        <item>ICU Bed</item>
+
+    </string-array>
+
+
+</resources>
